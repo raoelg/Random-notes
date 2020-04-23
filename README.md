@@ -38,8 +38,47 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ## Tests
 
+### LaTeX
+
 Can I do $\LaTeX$? The distribution function $F_X(x)$ and the density function $f_X(x)$, if it exists, are related by the equation
 
 \\[F_X(x) = \int_{-\infty}^x f_X(y)dy.\\]
 
 In R for a range of frequently encountered random variables both the distribution and the density function are defined, and follow the naming convention `p<name>` for the distribution function (because $F_X(x) = P(X\le x)$, hence, the p for probability), and `d<name>` for the density function. For example for a normally distributed random variable the corresponding functions are called `pnorm` and `dnorm`, while for an exponetially distributed random variable the functions are called `pexp` and `dexp`.
+
+Github pages doesn't seem to know LaTeX equations. :-(
+
+### R code and Python
+
+Does github pages know R syntax? And can it highlight it?
+
+```r
+library(tidyverse)
+library(MASS)
+
+plot(iris, col = as.numeric(iris$Species))
+
+fitlda = lda(Species ~ ., data = iris)
+
+confusion = table(predict(fitlda)$class, iris$Species)
+accuracy = confusion %>% print() %>% prop.table() %>% diag() %>% sum() %>% print()
+```
+That seems to work.
+
+What about Python?
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+def quarter_quadratic_surface(n = 30):
+    x = np.array([[i^2 + j^2 for j in range(n)] for i in range(n)])
+    
+x = quarter_quadratic_surface(30)
+plt.imshow(x)
+plt.show()
+```
+That also seems to work.
+
+```
+
