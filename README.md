@@ -73,6 +73,7 @@ import matplotlib.pyplot as plt
 
 def quarter_quadratic_surface(n = 30):
     x = np.array([[i^2 + j^2 for j in range(n)] for i in range(n)])
+    return(x)
     
 x = quarter_quadratic_surface(30)
 plt.imshow(x)
