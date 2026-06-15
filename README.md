@@ -1,3 +1,8 @@
+---
+title: My page
+mathjax: true
+---
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/raoelg/Random-notes/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
