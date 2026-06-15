@@ -3,20 +3,18 @@
 
 @import "{{ site.theme }}";
 
-.katex {
-  font-size: 0.96em;
+/* Test first: if this works, your CSS file is being loaded */
+body {
+  border-top: 6px solid red;
 }
 
-.katex .mord,
-.katex .mop,
-.katex .mbin,
-.katex .mrel,
-.katex .mopen,
-.katex .mclose,
-.katex .mpunct {
-  font-weight: 400;
+/* KaTeX tuning */
+.katex {
+  font-size: 0.94em;
+  color: #444;
 }
 
 .katex-display {
-  font-size: 0.98em;
+  font-size: 0.96em;
+  color: #444;
 }
