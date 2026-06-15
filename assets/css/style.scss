@@ -1,0 +1,22 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.katex {
+  font-size: 0.96em;
+}
+
+.katex .mord,
+.katex .mop,
+.katex .mbin,
+.katex .mrel,
+.katex .mopen,
+.katex .mclose,
+.katex .mpunct {
+  font-weight: 400;
+}
+
+.katex-display {
+  font-size: 0.98em;
+}
