@@ -1,7 +1,3 @@
----
-title: My page
-mathjax: true
----
 
 ## Welcome to GitHub Pages
 
